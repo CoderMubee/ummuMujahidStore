@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sample.css">
+</head>
+
+<body class="store">
+
+  <!-- Navbar -->
+  <header class="store__header">
+    <nav class="store__navbar navbar">
+      <a href="#" class="store__navbar__anchor"><img class="store__navbar__img" src="icons/menuIcon-30.png" alt=""></a>
+      <ul id="store__navbar__ul" class="hidden store__navbar__ul">
+
+        <li class="store__navbar__li"><a href="login.html">Sign-in</a><img src="icons/login-30.png" alt="login icon"></li>
+        <li class="store__navbar__li"><a href="">Start Shopping</a><img src="icons/cart-30.png" alt="cart icon"></li>
+        <li class="store__navbar__li"><a href="">Search</a></a><img src="icons/search-30.png" alt="search icon"></li>
+        <li class="store__navbar__li"><a href="">Chat us</a><img src="icons/chat-30.png" alt="chat icon"></li>
+        <li class="store__navbar__li"><a href="">About us</a></li>
+        <li class="store__navbar__li"><a href="">FAQ</a></li>
+      </ul>
+      <div>
+        <a href="#"><img class="navbar__icon navbar__icon--home" src="icons/home-30.png" alt="home icon"></a>
+        <a href="#"><img class="navbar__icon navbar__icon--cart" src="icons/cart-30.png" alt="cart icon"></a>
+        <a href="#"><img class="navbar__icon navbar__icon--search" src="icons/search-30.png" alt="search icon"></a>
+        <a href="login.html"><img class="navbar__icon navbar__icon--login" src="icons/login-30.png"
+            alt="login icon"></a>
+      </div>
+
+      <div class="navbar__container">
+        <a class="navbar__brand" href="#">UmmuMujahid Store</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="store__layout">
+    <!-- Filters Sidebar -->
+    <aside class="store__filters filters">
+      <h3 class="filters__title"><img class="filters__logo" src="icons/filter_logo.png" alt="filter logo">Filter</h3>
+
+      <h5 class="filters__title">Pick Color</h5>
+      <div class="filters__colors">
+        <label class="filters__color-option">
+          <input type="radio" name="color" value="red" class="filters__radio">
+          <span class="filters__color-dot filters__color-dot--red"></span>
+        </label>
+        <label class="filters__color-option">
+          <input type="radio" name="color" value="blue" class="filters__radio">
+          <span class="filters__color-dot filters__color-dot--blue"></span>
+        </label>
+        <label class="filters__color-option">
+          <input type="radio" name="color" value="green" class="filters__radio">
+          <span class="filters__color-dot filters__color-dot--green"></span>
+        </label>
+        <label class="filters__color-option">
+          <input type="radio" name="color" value="yellow" class="filters__radio">
+          <span class="filters__color-dot filters__color-dot--yellow"></span>
+        </label>
+      </div>
+
+      <h5 class="filters__title">Brand</h5>
+      <div class="filters__brand">
+        <input class="filters__checkbox" type="checkbox" id="brand1">
+        <label class="filters__label" for="brand1">Rymond</label>
+      </div>
+      <div class="filters__brand">
+        <input class="filters__checkbox" type="checkbox" id="brand2">
+        <label class="filters__label" for="brand2">Blue World</label>
+      </div>
+
+      <h5 class="filters__title">Price Range (N)</h5>
+      <select class="filters__price">
+        <option>1000 - 10,000</option>
+        <option>11,000 - 20,000</option>
+        <option>21,000 - 30,000</option>
+        <option>31,000 - above</option>
+      </select>
+    </aside>
+
+    <!-- Product Grid -->
+    <main class="store__products products">
+      <!-- Category Dropdown Cue -->
+      <div class="store__category category">
+        <div class="category__header">
+          <h5 class="category__title">Categories</h5>
+          <span class="category__arrow">&#9662;</span>
+
+          <!-- Search bar -->
+          <div class="category__search">
+            <input type="text" class="category__search-input" placeholder="Search...">
+            <button class="category__search-button">Search</button>
+          </div>
+        </div>
+        <p class="category__selected">Selected: All Products</p>
+        <ul class="category__list">
+          <li class="category__item">All Products</li>
+          <li class="category__item">Gadgets</li>
+          <li class="category__item">Clothings</li>
+          <li class="category__item">Electronics</li>
+          <li class="category__item">Accessories</li>
+          <li class="category__item">Utensils</li>
+          <li class="category__item">Furnitures</li>
+        </ul>
+      </div>
+
+      <div class="products__grid">
+        <!-- Repeat product-card blocks as needed -->
+      </div>
+    </main>
+
+    <!-- Product Description -->
+    <aside class="productDetails__section">
+      <div class="store__description description">
+        <div>
+          <h3 class="description__title">Product Details</h3>
+
+          <div class="description__content">
+            <p class="description__item description__name">
+              <strong>Product Name:</strong> <span id="detail-name">Not Available</span>
+            </p>
+
+            <p class="description__item description__price">
+              <strong>Price:</strong> <span id="detail-price">Not Available</span>
+            </p>
+
+            <p class="description__item description__size">
+              <strong>Size/Dimensions:</strong> <span id="detail-size">Not Available</span>
+            </p>
+
+            <p class="description__item description__colors">
+              <strong>Color/Style Options:</strong> <span id="detail-color">Not Available</span>
+            </p>
+            <!-- Hidden extra details -->
+            <div class="description__extra">
+              <p class="description__item description__ingredients"><strong>Ingredients:</strong> Whey Protein Isolate
+              </p>
+              <p class="description__item description__rating"><strong>Ratings & Reviews:</strong> ★★★★☆ (350 reviews)
+              </p>
+              <blockquote class="description__item description__testimonial">"Great taste and mixes well!
+                "Great taste and mixes well!"Great taste and mixes well!" – Customer
+                "Great taste and mixes well!"Great taste and mixes well!
+                "Great taste and mixes well!
+              </blockquote>
+              <p class="description__item description__certifications"><strong>Certifications:</strong> GMP, ISO
+                Certified
+              </p>
+              <!-- Watch Demo Video link -->
+              <div class="description__video">
+                <video id="detail-video" muted autoplay width="100%">
+                  <source id="video-source" src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- See more link -->
+            <a href="#" class="description__toggle">See More</a>
+          </div>
+          <a href="" class="storeFAQ__anchor">FAQ</a>
+        </div>
+      </div>
+      <div class="storeMessaging">
+        <input type="text" class="storeMessaging__input">
+        <a href="" class="storeMessaging__anchor"><img src="icons/send.png" alt="" class="storeMessaging__icon"></a>
+      </div>
+    </aside>
+
+
+  </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__info">
+        <p class="footer__text"><strong>HEAD OFFICE</strong></p>
+        <p class="footer__text">No. 44, Brown Road, Aguda Surulere, Lagos</p>
+        <p class="footer__text" style="color: var(--gold); margin-top: 10px;"><a
+            href="tel:+2348160228814">+234-816-022-8814</a></p>
+      </div>
+      <div class="footer__social">
+        <a href="#"><img src="icons/whatsapp-50.png" alt="WhatsApp icon"></a>
+        <a href="#"><img src="icons/facebook-50.png" alt="Facebook icon"></a>
+        <a href="#"><img src="icons/email-50.png" alt="email icon"></a>
+        <a href="#"><img src="icons/x-50.png" alt="X icon"></a>
+        <a href="#"><img src="icons/linkedIn-50.png" alt="linkedIn icon"></a>
+      </div>
+    </div>
+    <div class="footer__advert">
+      <p>Handcrafted by Msquare &bull; 2024</p>
+    </div>
+  </footer>
+  <script src="sample.js"></script>
+</body>
+
+</html>
